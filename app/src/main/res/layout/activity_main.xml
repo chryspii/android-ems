@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.richard.ems_app.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Time And Date -->
+        <TextView
+            android:id="@+id/time_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/time_and_date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bg_Usage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Content Home -->
+        <!-- Part 1 -->
+        <ImageView
+            android:id="@+id/bg_Usage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:contentDescription="@string/bg_usage"
+            app:layout_constraintBottom_toTopOf="@+id/bg_MaxDemand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_date" />
+
+        <ImageView
+            android:id="@+id/icon_bg_Usage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/ic_content_menu_1"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_Usage"
+            app:layout_constraintStart_toStartOf="@+id/bg_Usage"
+            app:layout_constraintTop_toTopOf="@+id/bg_Usage"
+            app:srcCompat="@mipmap/ic_lightning" />
+
+
+        <TextView
+            android:id="@+id/textContentMenu_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/usage_kwh"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/bg_Usage"
+            app:layout_constraintTop_toTopOf="@+id/bg_Usage" />
+
+        <TextView
+            android:id="@+id/textContentMenu_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="76,712"
+            android:textColor="@android:color/background_light"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_Usage"
+            app:layout_constraintEnd_toEndOf="@+id/bg_Usage"
+            app:layout_constraintTop_toBottomOf="@+id/textContentMenu_1" />
+
+        <!-- Part 2 -->
+        <ImageView
+            android:id="@+id/bg_MaxDemand"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_BackgroundMaxDemand"
+            android:contentDescription="@string/bg_maxdemand"
+            app:layout_constraintBottom_toTopOf="@+id/bg_Saving"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_Usage" />
+
+        <ImageView
+            android:id="@+id/icon_bg_MaxUsage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/ic_content_menu_2"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_MaxDemand"
+            app:layout_constraintStart_toStartOf="@+id/bg_MaxDemand"
+            app:layout_constraintTop_toTopOf="@+id/bg_MaxDemand"
+            app:srcCompat="@mipmap/ic_lightning" />
+
+        <TextView
+            android:id="@+id/textContentMenu_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/max_demand_kw"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/bg_MaxDemand"
+            app:layout_constraintTop_toTopOf="@+id/bg_MaxDemand" />
+
+        <TextView
+            android:id="@+id/textContentMenu_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="0.297"
+            android:textColor="@android:color/background_light"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_MaxDemand"
+            app:layout_constraintEnd_toEndOf="@+id/bg_MaxDemand"
+            app:layout_constraintTop_toBottomOf="@+id/textContentMenu_2" />
+
+        <!-- Part 3 -->
+        <ImageView
+            android:id="@+id/bg_Saving"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_BackgroundSaving"
+            android:contentDescription="@string/bg_saving"
+            app:layout_constraintBottom_toTopOf="@+id/bg_Cost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_MaxDemand" />
+
+        <ImageView
+            android:id="@+id/icon_bg_Saving"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/ic_content_menu_3"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_Saving"
+            app:layout_constraintStart_toStartOf="@+id/bg_Saving"
+            app:layout_constraintTop_toTopOf="@+id/bg_Saving"
+            app:srcCompat="@mipmap/ic_dollar_white" />
+
+        <TextView
+            android:id="@+id/textContentMenu_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/saving"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/bg_Saving"
+            app:layout_constraintTop_toTopOf="@+id/bg_Saving" />
+
+        <TextView
+            android:id="@+id/textContentMenu_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="5"
+            android:textColor="@android:color/background_light"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_Saving"
+            app:layout_constraintEnd_toEndOf="@+id/bg_Saving"
+            app:layout_constraintTop_toBottomOf="@+id/textContentMenu_3" />
+
+        <!-- Part 4 -->
+        <ImageView
+            android:id="@+id/bg_Cost"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_BackgroundCost"
+            android:contentDescription="@string/bg_cost"
+            app:layout_constraintBottom_toTopOf="@+id/view_line_footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_Saving" />
+
+        <ImageView
+            android:id="@+id/icon_bg_Cost"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/ic_content_menu_4"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_Cost"
+            app:layout_constraintStart_toStartOf="@+id/bg_Cost"
+            app:layout_constraintTop_toTopOf="@+id/bg_Cost"
+            app:srcCompat="@mipmap/ic_dollar_white" />
+
+        <TextView
+            android:id="@+id/textContentMenu_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/cost_ntd"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/bg_Cost"
+            app:layout_constraintTop_toTopOf="@+id/bg_Cost" />
+
+        <TextView
+            android:id="@+id/textContentMenu_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="218,325"
+            android:textColor="@android:color/background_light"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_Cost"
+            app:layout_constraintEnd_toEndOf="@+id/bg_Cost"
+            app:layout_constraintTop_toBottomOf="@+id/textContentMenu_4" />
+
+        <!-- Footer -->
+        <View
+            android:id="@+id/view_line_footer"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLine"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_Cost" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/_2017_taiwan_tech"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_line_footer" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Navigation Right Bar -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="500px"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu">
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

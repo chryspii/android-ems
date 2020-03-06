@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@mipmap/ic_home_black"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/nav_usage"
+        android:icon="@mipmap/ic_socket"
+        android:title="@string/usage" />
+
+    <item
+        android:id="@+id/nav_demand"
+        android:icon="@mipmap/ic_demand"
+        android:title="@string/demand" />
+
+    <item
+        android:id="@+id/nav_pf"
+        android:icon="@mipmap/ic_lightbulp"
+        android:title="@string/power_factor" />
+
+    <item
+        android:id="@+id/nav_sensor"
+        android:icon="@mipmap/ic_sensor"
+        android:title="@string/sensor" />
+
+    <item
+        android:id="@+id/nav_event"
+        android:icon="@mipmap/ic_bell"
+        android:title="@string/event" />
+
+    <item
+        android:id="@+id/nav_cost"
+        android:title="@string/cost">
+
+        <menu>
+            <item
+                android:id="@+id/nav_saving"
+                android:icon="@mipmap/ic_saving"
+                android:title="@string/saving2" />
+
+            <item
+                android:id="@+id/nav_payment"
+                android:icon="@mipmap/ic_payment"
+                android:title="@string/payment" />
+        </menu>
+
+    </item>
+
+
+</menu>

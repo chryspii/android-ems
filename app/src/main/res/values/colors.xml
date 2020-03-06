@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a3f54</color>
+    <color name="colorPrimaryDark">#337ab7</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorLine">#000000</color>
+    <color name="color_BackgroundUsage">#d2deef</color>
+    <color name="color_BackgroundMaxDemand">#f0ad4e</color>
+    <color name="color_BackgroundSaving">#c55a11</color>
+    <color name="color_BackgroundCost">#5cb85c</color>
+    <color name="color_BackgroundSensor">#e2f0d9</color>
+    <color name="color_BackgroundEvent">#8497b0</color>
+    <color name="color_RowSensor">#d5e3cf</color>
+    <color name="color_RowSensor2">#ebf1e9</color>
+    <color name="color_RowEvent">#e1e1e1</color>
+    <color name="color_RowEvent2">#f0f0f0</color>
+    <color name="color_divider">#eeeeee</color>
+    <color name="color_row1">#eaeff7</color>
+    <color name="color_row2">#ffe8cb</color>
+    <color name="color_row3">#fff4e7</color>
+    <color name="color_row4">#f8d7cd</color>
+    <color name="color_row5">#fcece8</color>
+    <color name="color_row6">#d5e3cf</color>
+    <color name="color_row7">#ebf1e9</color>
+</resources>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Taiwan Tech EMS</string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <!-- Navigation Bar String -->
+    <string name="home">Home</string>
+    <string name="usage">Usage</string>
+    <string name="cost">Cost</string>
+    <string name="sensor">Sensor</string>
+    <string name="event">Event</string>
+    <string name="power_factor">Power Factor</string>
+    <string name="demand">Demand</string>
+    <string name="saving2">Saving</string>
+    <string name="payment">Payment</string>
+
+    <!-- Notification String -->
+    <string name="notification">Notification</string>
+
+    <!-- Footer String -->
+    <string name="_2017_taiwan_tech">2017, Taiwan Tech</string>
+
+    <!-- Time and Date String -->
+    <string name="time_and_date">Time and Date</string>
+
+    <!-- Content Home String -->
+    <string name="bg_usage">bg_Usage</string>
+    <string name="bg_maxdemand">bg_MaxDemand</string>
+    <string name="bg_saving">bg_Saving</string>
+    <string name="bg_cost">bg_Cost</string>
+    <string name="ic_content_menu_1">ic_content_menu_1</string>
+    <string name="ic_content_menu_2">ic_content_menu_2</string>
+    <string name="ic_content_menu_3">ic_content_menu_3</string>
+    <string name="ic_content_menu_4">ic_content_menu_4</string>
+    <string name="usage_kwh">Usage (kWh)</string>
+    <string name="max_demand_kw">Max Demand (MW)</string>
+    <string name="saving">Saving (%)</string>
+    <string name="cost_ntd">Cost (NTD)</string>
+
+    <string-array name="list_event">
+        <item>PF</item>
+        <item>Demand</item>
+        <item>Usage</item>
+    </string-array>
+
+    <string-array name="list_sort_event">
+        <item>Sort By Building</item>
+        <item>Sort By Value</item>
+    </string-array>
+
+</resources>
